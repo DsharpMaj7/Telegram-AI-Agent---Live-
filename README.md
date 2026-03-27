@@ -1,4 +1,4 @@
-A telegram chatbot powered by OpenAI powered by n8n cloud. 
+A telegram chatbot using OpenAI chat model powered by n8n cloud. 
 
 **Features**:
 - Responds to user messages
