@@ -4,7 +4,7 @@ A telegram chatbot using OpenAI chat model powered by n8n cloud.
 - Responds to user messages
 - Uses GPT-4 for responses
 - Triggered by Telegram messages from user
-- Deployed bia n8n cloud
+- Deployed via n8n cloud
 
 **Setup Instructions**: Telegram > n8n > OpenAI > Telegram
 - Open Telegram app
@@ -23,7 +23,7 @@ A telegram chatbot using OpenAI chat model powered by n8n cloud.
 - Add Chat Model, Open AI Chat Model
 - Add OpenAI credentials > Go to https://platform.openai.com/settings/, click API Keys, click + Create new secret Key
 - Copy and paste key into OpenAI Chat Model node
-- Can change Model: From List, depending on the tier your are using
+- Can change Model: From List, depending on the tier you are using
 - In n8n editor, click + on AI Agent, add Telegram Send Message Node
 - Set: Resource: Message, Operation: Send Message, drag Chat ID from input into parameters Chat ID, code: {{ $('Telegram Trigger').item.json.message.chat.id}}, drag Output from input into parameters Text, code: {{ $json.output }}
 - Click Execute workflow, ensure everything turns green
